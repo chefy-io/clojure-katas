@@ -4,8 +4,13 @@
 
 (deftest roman-to-arabic-basics
   (testing "roman to arabic basics"
-  (is (= 1 (roman->arabic \I)))
-  (is (= 5 (roman->arabic \V)))))
+    (is (= 1 (roman->arabic "I")))
+    (is (= 5 (roman->arabic "V")))))
+
+(deftest roman-to-arabic-addition
+  (testing "roman to arabic addtions"
+    (is (= 2 (roman->arabic "II")))
+    (is (= 7 (roman->arabic "VII")))))
 
 ; (deftest roman-to-arabic-basics
 ;   (testing "basic characters are tranformed properly."

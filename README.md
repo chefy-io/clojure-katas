@@ -1,35 +1,7 @@
 # clojure-katas
+## List of problems
+* Roman numerals
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar clojure-katas-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2013 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+## Notes
+1. What's the difference between `def` and `defn`?
+  > `def`s are evaluated only once wehereas `defn`s (with or without arguments) are evaluated (execuated) every time they are called. If your function alweays return the same value, you can change them to `def`s.
