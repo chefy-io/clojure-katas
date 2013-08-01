@@ -7,37 +7,24 @@
     (is (= 1 (roman->arabic "I")))
     (is (= 5 (roman->arabic "V")))))
 
-(deftest roman-to-arabic-addition
+(deftest roman-to-arabic-advanced
   (testing "roman to arabic addtions"
     (is (= 2 (roman->arabic "II")))
-    (is (= 7 (roman->arabic "VII")))))
+    (is (= 7 (roman->arabic "VII")))
+    (is (= 31 (roman->arabic "XXXI")))
+    (is (= 900 (roman->arabic "CM")))
+    (is (= 1979 (roman->arabic "MCMLXXIX")))))
 
-; (deftest roman-to-arabic-basics
-;   (testing "basic characters are tranformed properly."
-;     (is (= 1  (roman->arabic "I")))
-;     (is (= 5  (roman->arabic "V")))
-;     (is (= 10 (roman->arabic "X")))
-;     (is (= 50 (roman->arabic "L")))
-;     (is (= 100 (roman->arabic "C")))
-;     (is (= 500 (roman->arabic "D")))
-;     (is (= 1000 (roman->arabic "M"))))
+(deftest arabic-to-roman-basics
+  (testing "arabic to roman basics"
+    (is (= "I" (arabic->roman 1)))
+    (is (= "V" (arabic->roman 5)))
+    (is (= "X" (arabic->roman 10)))))
 
-; (deftest roman-to-arabic-addition
-;   (testing "addition works properly"
-;     (is (= 2 (roman->arabic "II")))
-;     (is (= 7 (roman->arabic "VII")))
-;     (is (= 31 (roman->arabic "XXXI")))))
-
-; (deftest roman-to-arabic-subtraction
-;    (is (= 4 (roman->arabic "IV")))
-;    (is (= 900 (roman->arabic "CM"))))
-
-; (deftest roman-to-arabic-both
-;    (is (= 19 (roman->arabic "XIX")))
-;    (is (= 1979 (roman->arabic "MCMLXXIX"))))
-
-; (deftest roman-to-arabic-big-numbers
-;    (is (= 29 (roman->arabic "XXIX")))
-;    (is (= 38 (roman->arabic "XXXVIII")))
-;    (is (= 291 (roman->arabic "CCXCI")))
-;    (is (= 1999 (roman->arabic "MCMXCIX"))))
+(deftest arabic-to-roman-advanced
+  (testing "arabic to roman advanced"
+    (is (= "II" (arabic->roman 2)))
+    (is (= "VII" (arabic->roman 7)))
+    (is (= "XXXI" (arabic->roman 31)))
+    (is (= "CM" (arabic->roman 900)))
+    (is (= "MCMLXXIX" (arabic->roman 1979)))))

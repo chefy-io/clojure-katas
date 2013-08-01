@@ -48,5 +48,32 @@
         (recur rest-roman-chars (+ arabic num))
         (if-let [num (get roman-to-arabic-map (str c1))]
           (recur (apply str c2 rest-roman-chars)(+ arabic num))
-          arabic)
-   ))
+          arabic))))
+
+; Pseudocode arabic to roman
+; Input: an arabic number X, a map of arabic to roman maps, sorted from maximum to minimum
+; Output: a sequence of roman chars
+;
+; assign var roman-sequence = []
+;
+; for ci in [c1, c2, ... cn] of arabic to roman maps, ordered from max to min
+; if X (left to assign) = 0 # base case
+;   return roman-sequence
+; else
+;   if X - ci >= 0
+;     append ci to the tail of roman-sequence
+;     X = X - arabic_val_of(ci)
+;     recur
+;   else
+;     recur
+
+(defn arabic->roman
+  [arabic]
+  (loop [ [num & rest-num :as nums] (reverse (sort (keys arabic-to-roman-map)))
+          roman ""
+          arabic arabic]
+    (if num
+      (if (>= arabic num)
+        (recur nums (str roman (get arabic-to-roman-map num))(- arabic num))
+        (recur rest-num roman arabic))
+      roman)))
