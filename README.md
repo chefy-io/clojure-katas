@@ -1,7 +1,17 @@
 # clojure-katas
+Learn the joy of Clojure by solving some handy problems.
+
 ## List of problems
 * Roman, arabic conversion
-  - Skill: tackle how `loop` and `recur` works
+  - How to construct map and its reverse map
+  - Destructuring in Clojure
+  - `if-let` performs evaluation and assignment
+  - Tail recursion in clojure using `loop` and `recur`
+
+* Newton's method
+  - Re-familiarize with approximation using Newton methods
+  - Tail recursion in clojure using `loop` and `recur`
+
 
 ## Notes
 1. What's the difference between `def` and `defn`?
