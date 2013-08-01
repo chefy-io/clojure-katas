@@ -12,6 +12,9 @@ Learn the joy of Clojure by solving some handy problems.
   - Re-familiarize with approximation using Newton methods
   - Tail recursion in clojure using `loop` and `recur`
 
+* Bayesian analysis
+  - Learn how to use [incanter](https://github.com/liebke/incanter)
+
 
 ## Notes
 1. What's the difference between `def` and `defn`?
