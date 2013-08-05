@@ -1,9 +1,9 @@
-# clojure-katas
+# Clojure Katas
 Learn to program Clojure by solving some handy problems..
 Inspired by Groupon Clojure lunch
 
 ## Contributing
-If you have small interesting problems for hands-on pratice, please share! :)
+If you have small interesting problems for hands-on pratice, please share by submitting a pull request! :)
 
 ## List of existing problems
 * Roman, arabic conversion
