@@ -35,3 +35,4 @@ If you have small interesting problems for hands-on pratice, please share by sub
   
 ## Other source of ideas
 [Project Euler](http://projecteuler.net/problems)
+[4Clojure](http://www.4clojure.com/)
