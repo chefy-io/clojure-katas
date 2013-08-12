@@ -8,7 +8,7 @@
 (def audience-rating
   ($ :rating (read-dataset "./data/oscar_audience_rating.csv"
                 :header true)))
-
+; assume data
 (defn lincoln
   [data]
   (sel data :cols 1))
