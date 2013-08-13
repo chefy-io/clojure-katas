@@ -14,3 +14,12 @@
   "simulate stock price using random walk hypothesis"
   [num, price]
   (take num (iterate rand-walk price)))
+
+; if adding evenly distributed random numbers many times
+; then you get numbers that approximate a normal distribution
+
+(defn normal-distr
+  [mean variance]
+  (reduce + mean (repeatedly variance rand)))
+
+;(view (histogram (repeatedly 1000 (normal-distr 100 5))))

@@ -17,8 +17,6 @@
 ;  if number can be divided by div, then decrement number by the factor of div, loop
 ;  if number cannot be divided by div, then increment div by 1, loop
 
-
-
 (defn max-prime-factor
   [number]
   (loop [number number
