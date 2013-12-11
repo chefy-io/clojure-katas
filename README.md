@@ -12,7 +12,7 @@ If you have small interesting problems for hands-on pratice, please share by sub
   - Tail recursion in clojure using `loop` and `recur`
 
 * Newton's method
-  - Re-familiarize with approximation using Newton methods
+  - Approximation using Newton methods
   - Tail recursion in clojure using `loop` and `recur`
 
 * Largest prime factors
