@@ -1,6 +1,5 @@
 # Clojure Katas
-Learn to program Clojure by solving some handy problems..
-Inspired by Groupon Clojure lunch
+Provide a set of problems to practice Clojure
 
 ## Contributing
 If you have small interesting problems for hands-on pratice, please share by submitting a pull request! :)
@@ -23,21 +22,8 @@ If you have small interesting problems for hands-on pratice, please share by sub
 * Bayesian analysis
   - Learn how to use [incanter](https://github.com/liebke/incanter)
 
-* Stock Simulation (WIP)
-  - Inspired by the blog post [Stock Simulation in Clojure](http://blog.safaribooksonline.com/2013/08/01/stock-simulation-in-clojure/)
-  - Continue to explore incanter library
-  - Lazy sequence in Clojure using `iterate`
-  - `reduce` function
-  - `partial` function in Clojure
-  - All the fun ideas about reading stock charts! (random walk simulation, normal step simulation, fixed interest step simulation)
-
-* Latin square slicing (WIP)
-  - [4Clojure practice](http://www.4clojure.com/problem/152)
+* Number to numbers
 
 ## Other source of ideas
 [Project Euler](http://projecteuler.net/problems)
 [4Clojure](http://www.4clojure.com/)
-
-## Study Notes
-* Lazy seq: takes a body of expressions that returns an ISeq or nil, and yields a Sequable object that will invoike the body only the first time seq is called.
-

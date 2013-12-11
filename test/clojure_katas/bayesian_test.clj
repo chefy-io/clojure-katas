@@ -4,9 +4,6 @@
         incanter.core incanter.stats
         incanter.io incanter.bayes))
 
-; warm up exercise
-; let's learn a little about what incanter
-; can do
 (def simple-dataset
   (to-dataset [{:a 1 :b 2} {:a 1 :b 2}]))
 
@@ -33,7 +30,6 @@
       (is (< 0.10 (mean (silver-lining-playbook (initial-distr 9)))))
       (is (> 1.12 (mean (silver-lining-playbook (initial-distr 9)))))))
 
-; TODO: write a range-in-between macro
 (deftest posterior-after-critical
   (testing "probability for candidate change after critical rating"
     (is (>= 0.1 (first (quantile (lincoln (posterior-distr (prior-vec 9) critical-rating)) :probs [0.025 0.975]))))
