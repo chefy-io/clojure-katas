@@ -23,6 +23,9 @@ If you have small interesting problems for hands-on pratice, please share by sub
   - Learn how to use [incanter](https://github.com/liebke/incanter)
 
 * Number to numbers
+* N-th fibonacci numbers
+* Arranged probability
+  - [Euler problem 100]((http://projecteuler.net/problem=100)
 
 ## Other source of ideas
 [Project Euler](http://projecteuler.net/problems)
