@@ -8,7 +8,7 @@
   {:pre [(>= row 0)(>= col 0)]}
   (if (or (zero? col)
           (= col row))
-    1
+    1N
     (let [row' (dec row)]
       (+ (compute row' (dec col))
          (compute row' col)))))
