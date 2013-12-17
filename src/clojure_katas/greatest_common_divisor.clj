@@ -11,5 +11,5 @@
     x
     (gcd y (rem x y))))
 
-(defn lcm
+#_(defn lcm
   )

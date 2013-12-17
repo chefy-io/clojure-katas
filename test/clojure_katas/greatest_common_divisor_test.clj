@@ -1,6 +1,6 @@
 (ns clojure-katas.greatest-common-divisor-test
   (:use clojure.test
-        clojure-katas.divisor-and-multiplier))
+        clojure-katas.greatest-common-divisor))
 
 (deftest greatest-common-divisor-test
   (testing "return GCD of a pair"
