@@ -1,11 +1,11 @@
-(ns clojure-katas.arranged-prob)
+(ns clojure-katas.arranged-prob
+  (:require [clojure-katas.core :as core]))
 
 ; Original problem source: http://projecteuler.net/problem=100
-
-(defn prob
-  "p: total population,
-   m: total number of sub-category,
-   n: number of consecutive draws"
-  [p, m, n]
-  (if (>= 0 n) 1
-    (* (double (/ m p)) (prob (- p 1) (- m 1) (- n 1)))))
+(core/defproblem prob
+  "p: total number of chips,
+   m: total number of blue chips,
+   n: number of consecutive draws
+   output: the probability of n consecutive draws of blue chips out of a bucket that has p chips,
+   m out of p chips are blue"
+  [p, m, n])

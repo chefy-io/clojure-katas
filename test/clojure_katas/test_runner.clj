@@ -1,14 +1,20 @@
 (ns clojure-katas.test-runner
   (:require [clojure.test :as t]))
 
-(def problem-namespaces
+(def problems
   '[clojure-katas.arranged-prob-test
-    clojure-katas.bayesian-test])
+    clojure-katas.count-coin-change-test
+    clojure-katas.exponential-test
+    clojure-katas.nth-fibonacci-test
+    clojure-katas.greatest-common-divisor-test
+    clojure-katas.max-prime-factor-test
+    clojure-katas.pascal-triangle-test
+    clojure-katas.newtons-method-test])
 
 (defn run-tests
   []
   (try
-    (loop [nses problem-namespaces]
+    (loop [nses problems]
       (when-let [[ns & more] nses]
         (and (try
                (require ns)
@@ -16,7 +22,7 @@
                (catch clojure.lang.ExceptionInfo e
                  (if (contains? (ex-data e) :symbol)
                    (let [sym (-> e ex-data :symbol)]
-                     (println "You haven't implemented" sym)
+                     (println "Current kata to tackle: " sym)
                      false ; don't continue
                      )
                    (throw e))))

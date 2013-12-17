@@ -1,20 +1,19 @@
-(ns clojure-katas.nth-fibonacci)
-; return nth fibonacci number
+(ns clojure-katas.nth-fibonacci
+  (:require [clojure-katas.core :as core]))
 
 (defn nth-fib-tree
-  "run time: O(2^n), calling itself at each recursion"
-  [n]
-  (loop [n n]
-    (cond
-      (< n 0) 0
-      (= n 0) 1
-      (= n 1) 1
-      :else (+ (nth-fib-tree (- n 1)) (nth-fib-tree (- n 2))))))
+  "run time: O(2^n), calling itself at each recursion
+   if n = 0 or n = 1: return 1
+   else fib(n) = fib(n-1) + fib(n-2)"
+  [n])
 
 (defn fib-iter
   "x: first start num,
    y: second start num,
-   n: nth iterative, stopping num"
+   n: nth iterative, stopping num
+   each iter:
+     y <- x + y
+     x <- y"
    [x y n]
    (loop [x x
           y y
@@ -24,8 +23,6 @@
        (= n 0) x
        :else (fib-iter (+ x y) x (- n 1)))))
 
-(defn nth-fib-iter
+(core/defproblem nth-fib-iter
   "run time: O(n) iterate n times"
-  [n]
-  (fib-iter 1 0 n)
-)
+  [n])
