@@ -12,7 +12,7 @@ If you're interested in learning Clojure and look for small problems to practice
 hope this package can be of help!
 
 # How
-There are two ways to practice:
+You can use this package to:
 - Solve existing problems
 - Create new problems
 
@@ -20,13 +20,18 @@ There are two ways to practice:
 ### Example: Solve sine angle
 -----------------------------
 Run katas:
+
     $ lein katas-run
+
 When *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
+
     $ lein katas-run
     Performing task 'run' with profile(s): 'test'
     Current kata to tackle:  clojure-katas.sine-angle/sine
     false
+
 After *arranged-porb* is implemented, it moves to the next problem:
+
     Performing task 'run' with profile(s): 'test'
 
     Testing clojure-katas.sine-angle-test
@@ -40,6 +45,7 @@ After *arranged-porb* is implemented, it moves to the next problem:
 ### Example: create arranged probability problem
 -------------------------------------------------
 Create `/src-answers/clojure-katas/arranged-prob.clj` for solution.
+
     (defn prob
       "p: total population,
        m: total number of sub-category,
@@ -49,7 +55,8 @@ Create `/src-answers/clojure-katas/arranged-prob.clj` for solution.
         (* (double (/ m p)) (prob (- p 1) (- m 1) (- n 1)))))
 
 Create `/src/clojure-katas/arranged-prob.clj` for problem challenge.
-** When using core/defproblem, doc is required. **
+*When using core/defproblem, doc is required.*
+
     (ns clojure-katas.arranged-prob
       (:require [clojure-katas.core :as core]))
 
@@ -63,6 +70,7 @@ Creates test under `/test/clojure-katas/arranged-prob-test`
 Add *clojure-katas.arranged-prob-test* inside the problemsets defined in [test_runner](https://github.com/marshallshen/clojure-katas/blob/master/test/clojure_katas/test_runner.clj)
 
 Run through solution to make sure it works:
+
     $ lein katas-answers
 
 # Contributors
