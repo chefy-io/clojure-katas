@@ -17,8 +17,8 @@ There are two ways to practice:
 - Create new problems
 
 ## Solve existing problems
-Solve sine angle
---------------------------
+### Example: Solve sine angle
+-----------------------------
 Run katas:
     $ lein katas-run
 When *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
@@ -37,11 +37,9 @@ After *arranged-porb* is implemented, it moves to the next problem:
     false
 
 ## Create new problems
-Example: create arranged probability problem
-------------------------------------
-This is an easy-to-start guide for creating new problems
-1. Create `/src-answers/clojure-katas/arranged-prob.clj` for solution
-* under `/src-answers/clojure-katas/arranged-prob.clj`, define the solution:
+### Example: create arranged probability problem
+-------------------------------------------------
+Create `/src-answers/clojure-katas/arranged-prob.clj` for solution.
     (defn prob
       "p: total population,
        m: total number of sub-category,
@@ -49,9 +47,9 @@ This is an easy-to-start guide for creating new problems
       [p, m, n]
       (if (>= 0 n) 1
         (* (double (/ m p)) (prob (- p 1) (- m 1) (- n 1)))))
-2. Create `/src/clojure-katas/arranged-prob.clj` for problem challenge
-`/src/clojure-katas/arranged-prob.clj` defines the challenge,
-  ** When using core/defproblem, doc is required. **
+
+Create `/src/clojure-katas/arranged-prob.clj` for problem challenge.
+** When using core/defproblem, doc is required. **
     (ns clojure-katas.arranged-prob
       (:require [clojure-katas.core :as core]))
 
@@ -59,13 +57,16 @@ This is an easy-to-start guide for creating new problems
      "required documentation goes here"
       [p, m, n])
       * under `/src/clojure-katas/arranged-prob.clj`
-2. Create `test` under `/test/clojure-katas/arranged-prob-test`
-3. Add *clojure-katas.arranged-prob-test* inside the problemsets defined in [test_runner](https://github.com/marshallshen/clojure-katas/blob/master/test/clojure_katas/test_runner.clj)
-4. Run through solution to make sure it works:
+
+Creates test under `/test/clojure-katas/arranged-prob-test`
+
+Add *clojure-katas.arranged-prob-test* inside the problemsets defined in [test_runner](https://github.com/marshallshen/clojure-katas/blob/master/test/clojure_katas/test_runner.clj)
+
+Run through solution to make sure it works:
     $ lein katas-answers
 
 # Contributors
-Many thanks for [Gary Federicks](https://github.com/fredericksgary) and [Robert Boyd](https://github.com/rboyd) for helping out on the prooject!
+Many thanks to [Gary Federicks](https://github.com/fredericksgary) and [Robert Boyd](https://github.com/rboyd) for helping out on the prooject!
 
 ## Another great resources
 * [Clojure Koans](http://clojurekoans.com/)
