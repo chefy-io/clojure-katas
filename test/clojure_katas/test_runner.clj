@@ -2,14 +2,17 @@
   (:require [clojure.test :as t]))
 
 (def problems
-  '[clojure-katas.arranged-prob-test
-    clojure-katas.count-coin-change-test
+  '[clojure-katas.sine-angle-test
+    clojure-katas.arranged-prob-test
     clojure-katas.exponential-test
     clojure-katas.nth-fibonacci-test
     clojure-katas.greatest-common-divisor-test
     clojure-katas.max-prime-factor-test
     clojure-katas.pascal-triangle-test
-    clojure-katas.newtons-method-test])
+    clojure-katas.count-coin-change-test
+    clojure-katas.procedural-sum-test
+    clojure-katas.newtons-method-test
+    clojure-katas.roman-to-arabic-test])
 
 (defn run-tests
   []

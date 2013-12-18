@@ -1,4 +1,4 @@
-(ns clojure-katas.answers.procedural-sum)
+(ns clojure-katas.procedural-sum)
 
 (defn sum-integers
   [x y]

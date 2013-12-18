@@ -43,7 +43,7 @@
         recur the outer controll loop
     end")
 
-(defn arabic->roman
+(core/defproblem arabic->roman
   [arabic]
   "Pseudocode arabic to roman
     Input: an arabic number X, a map of arabic to roman maps, sorted from maximum to minimum
