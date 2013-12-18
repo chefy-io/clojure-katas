@@ -67,7 +67,7 @@ Create `/src/clojure-katas/arranged_prob.clj` for problem challenge.
   [p, m, n])
 ```
 
-Creates test under `/test/clojure-katas/arranged_prob_test`
+Creates test under `/test/clojure-katas/arranged_prob_test.clj`
 
 ```clojure
 (deftest arranged-prob-test
