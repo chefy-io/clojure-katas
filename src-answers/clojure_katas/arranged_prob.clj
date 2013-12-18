@@ -8,4 +8,4 @@
    n: number of consecutive draws"
   [p, m, n]
   (if (>= 0 n) 1
-    (* (double (/ m p)) (prob (- p 1) (- m 1) (- n 1)))))
+    (* (double (/ m p)) (prob (dec p) (dec m) (dec n)))))

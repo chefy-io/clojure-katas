@@ -7,7 +7,7 @@
   "b^n = b*b^(n-1)
    b^0 = 1"
   [base index]
-  {:pre [(not (and (< base 0)(< index 1)))]}
+  {:pre [(not (and (neg? base)(neg? (dec index))))]}
   (if (zero? index)
     1N
     (* base (expt-linear base (dec index)))))
@@ -16,7 +16,7 @@
   "b^n = (b^(n/2))^2 if n is even
    b^n = b*b^(n-1) if n is odd"
    [base index]
-   {:pre [(not (and (< base 0)(< index 1)))]}
+   {:pre [(not (and (neg? base)(neg? (dec index))))]}
    (let [b base
          n index
          square (fn [x] (* x x))]
