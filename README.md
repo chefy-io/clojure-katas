@@ -44,7 +44,7 @@ After *arranged-porb* is implemented, it moves to the next problem:
 ## Create new problems
 ### Example: create arranged probability problem
 -------------------------------------------------
-Create `/src-answers/clojure-katas/arranged-prob.clj` for solution.
+Create `/src-answers/clojure-katas/arranged_prob.clj` for solution.
 
 ```clojure
 (defn prob
@@ -55,7 +55,7 @@ Create `/src-answers/clojure-katas/arranged-prob.clj` for solution.
   (if (>= 0 n) 1
     (* (double (/ m p)) (prob (- p 1) (- m 1) (- n 1)))))
 ```
-Create `/src/clojure-katas/arranged-prob.clj` for problem challenge.
+Create `/src/clojure-katas/arranged_prob.clj` for problem challenge.
 ** When using core/defproblem, doc is required. **
 
 ```clojure
@@ -67,7 +67,7 @@ Create `/src/clojure-katas/arranged-prob.clj` for problem challenge.
   [p, m, n])
 ```
 
-Creates test under `/test/clojure-katas/arranged-prob-test`
+Creates test under `/test/clojure-katas/arranged_prob_test`
 
 ```clojure
 (deftest arranged-prob-test
