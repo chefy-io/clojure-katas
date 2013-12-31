@@ -1,8 +1,5 @@
 (ns clojure-katas.exponential)
 
-(def about
-  "Implement exponential function using different approach, analyze the running time")
-
 (defn expt-linear
   "b^n = b*b^(n-1)
    b^0 = 1"

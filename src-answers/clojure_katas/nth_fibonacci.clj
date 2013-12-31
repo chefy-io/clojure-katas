@@ -7,7 +7,7 @@
     (neg? n) 0
     (zero? n) 1
     (= n 1) 1
-    :else (+ (nth-fib-tree (- n 1)) (nth-fib-tree (- n 2)))))
+    :else (+ (nth-fib-tree (dec n)) (nth-fib-tree (- n 2)))))
 
 (defn fib-iter
   "x: first start num,
@@ -17,7 +17,7 @@
    (cond
      (neg? n) 0
      (zero? n) x
-     :else (fib-iter (+ x y) x (- n 1))))
+     :else (fib-iter (+ x y) x (dec n))))
 
 (defn nth-fib-iter
   "run time: O(n) iterate n times"

@@ -12,7 +12,9 @@
     clojure-katas.count-coin-change-test
     clojure-katas.procedural-sum-test
     clojure-katas.newtons-method-test
-    clojure-katas.roman-to-arabic-test])
+    clojure-katas.roman-to-arabic-test
+    clojure-katas.integral-test
+    ])
 
 (defn run-tests
   []

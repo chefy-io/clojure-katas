@@ -1,7 +1,5 @@
 (ns clojure-katas.arranged-prob)
 
-; Original problem source: http://projecteuler.net/problem=100
-
 (defn prob
   "p: total population,
    m: total number of sub-category,
