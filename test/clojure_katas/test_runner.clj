@@ -11,10 +11,10 @@
     clojure-katas.pascal-triangle-test
     clojure-katas.count-coin-change-test
     clojure-katas.procedural-sum-test
-    clojure-katas.newtons-method-test
-    clojure-katas.roman-to-arabic-test
+    clojure-katas.square-root-test
     clojure-katas.integral-test
-    ])
+    clojure-katas.fixed-point-test
+    clojure-katas.roman-to-arabic-test])
 
 (defn run-tests
   []

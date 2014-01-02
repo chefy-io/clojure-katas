@@ -1,4 +1,4 @@
-(ns clojure-katas.newtons-method)
+(ns clojure-katas.square-root)
 
 ; Goal: In numerical analysis, Newton's method is a method
 ; for finding successively better approximations to the roots

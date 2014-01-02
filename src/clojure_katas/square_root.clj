@@ -1,4 +1,4 @@
-(ns clojure-katas.newtons-method
+(ns clojure-katas.square-root
   (:require [clojure-katas.core :as core]))
 
 (core/defproblem sqrt
