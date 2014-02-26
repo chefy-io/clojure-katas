@@ -16,6 +16,11 @@ You can use this package to:
 - Solve existing problems
 - Create new problems
 
+## Run katas:
+  $ lein katas-run
+## Run katas with implemented answers:
+  $ lein katas-answers
+
 ## Solve existing problems
 ### Example: Solve sine angle
 -----------------------------
