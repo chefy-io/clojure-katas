@@ -24,10 +24,6 @@ You can use this package to:
 ## Solve existing problems
 ### Example: Solve sine angle
 -----------------------------
-Run katas:
-
-    $ lein katas-run
-
 When *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
 
     $ lein katas-run
