@@ -1,7 +1,7 @@
 (ns clojure-katas.exponential
   (:require [clojure-katas.core :as core]))
 
-(core/defprobelm expt-linear
+(core/defproblem expt-linear
   "b^n = b*b^(n-1)
    b^0 = 1"
   [base index])
