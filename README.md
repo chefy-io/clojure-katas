@@ -1,7 +1,7 @@
 # Clojure Katas
 ## Current Dependency
 - Clojure 1.5.1
-- Leiningen 2.0.0
+- Leiningen 2.4.1
 
 # What
 Set of small problems from [Structure and Interpretation of Computer Program](http://mitpress.mit.edu/sicp/)
