@@ -7,6 +7,7 @@
     clojure-katas.exponential-test
     clojure-katas.nth-fibonacci-test
     clojure-katas.greatest-common-divisor-test
+    clojure-katas.reverse-binary-test
     clojure-katas.max-prime-factor-test
     clojure-katas.pascal-triangle-test
     clojure-katas.count-coin-change-test
