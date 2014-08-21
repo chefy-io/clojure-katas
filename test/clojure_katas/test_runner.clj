@@ -15,7 +15,8 @@
     clojure-katas.square-root-test
     clojure-katas.integral-test
     clojure-katas.fixed-point-test
-    clojure-katas.roman-to-arabic-test])
+    clojure-katas.roman-to-arabic-test
+    clojure-katas.digit-factorials-test])
 
 (defn run-tests
   []
