@@ -8,8 +8,8 @@ Set of small problems from [Structure and Interpretation of Computer Program](ht
 and [Project Euler](http://projecteuler.net/)
 
 # Why
-If you're interested in learning Clojure and look for small problems to practice,
-hope this package can be of help!
+If you're interested in learning Clojure and looking for small problems to practice,
+hopefully this package can be of help!
 
 # How
 You can use this package to:
@@ -33,7 +33,7 @@ When *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj
     Current kata to tackle:  clojure-katas.sine-angle/sine
     false
 
-After *arranged-porb* is implemented, it moves to the next problem:
+After *arranged-prob* is implemented, it moves to the next problem:
 
     Performing task 'run' with profile(s): 'test'
 
@@ -59,6 +59,7 @@ Create `/src-answers/clojure-katas/arranged_prob.clj` for solution.
     (* (double (/ m p)) (prob (- p 1) (- m 1) (- n 1)))))
 ```
 Create `/src/clojure-katas/arranged_prob.clj` for problem challenge.
+
 ** When using core/defproblem, doc is required. **
 
 ```clojure
@@ -91,7 +92,7 @@ Run through solution to make sure it works:
     $ lein katas-answers
 
 # Contributors
-Many thanks to [Gary Federicks](https://github.com/fredericksgary) and [Robert Boyd](https://github.com/rboyd) for helping out on the prooject!
+Many thanks to [Gary Federicks](https://github.com/fredericksgary) and [Robert Boyd](https://github.com/rboyd) for helping out on the project!
 
 ## Another great resources
 * [Clojure Koans](http://clojurekoans.com/)
