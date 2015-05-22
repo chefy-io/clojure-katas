@@ -1,8 +1,8 @@
 # Clojure Katas
 
 This project contains a set of problems to help you get your hands dirty
-with Clojure. I hope we can add more problems and treat this as a
-**living-and-breathing** project.
+with Clojure. I hope we can add more problems and treat this as an
+ongoing project.
 
 ## Get started
 The project is set up so that you can solve problems one by one. All the
@@ -27,6 +27,7 @@ out, feel free to:
   2. Submit a Pull Request (bugfix, or submit a new problem!)
 
 If you have any questions, feel free to messaage me on Github or Twitter: @marshallshen
+
 Many thanks to [the contributors](https://github.com/marshallshen/clojure-katas/graphs/contributors), you made this project awesome!
 
 ### Example: solve a kata
@@ -64,7 +65,8 @@ Create `/src-answers/clojure-katas/arranged_prob.clj` for solution.
 ```
 Create `/src/clojure-katas/arranged_prob.clj` for problem challenge.
 
-** When using core/defproblem, doc is required. **
+When using `core/defproblem`, you are **required** to put comments to
+describe the problem.
 
 ```clojure
 (ns clojure-katas.arranged-prob
