@@ -1,74 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Clojure Katas : Learn the joy of Clojure by solving problems." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Clojure Katas</title>
+    <meta charset="UTF-8">
+    <title>Clojure Katas by marshallshen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Clojure Katas</h1>
+      <h2 class="project-tagline">Learn the joy of Clojure by solving problems.</h2>
+      <a href="https://github.com/marshallshen/clojure-katas" class="btn">View on GitHub</a>
+      <a href="https://github.com/marshallshen/clojure-katas/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/marshallshen/clojure-katas/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/marshallshen/clojure-katas">View on GitHub</a>
+    <section class="main-content">
+      <h1>
+<a id="clojure-katas" class="anchor" href="#clojure-katas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clojure Katas</h1>
 
-          <h1 id="project_title">Clojure Katas</h1>
-          <h2 id="project_tagline">Learn the joy of Clojure by solving problems.</h2>
+<p>This project contains a set of problems to help you get your hands dirty
+with Clojure. I hope we can add more problems and treat this as a
+<strong>living-and-breathing</strong> project.</p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/marshallshen/clojure-katas/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/marshallshen/clojure-katas/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<h2>
+<a id="get-started" class="anchor" href="#get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get started</h2>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>
-<a name="current-dependency" class="anchor" href="#current-dependency"><span class="octicon octicon-link"></span></a>Current Dependency</h2>
+<p>The project is set up so that you can solve problems one by one. All the
+problem skeletons are set up <a href="https://github.com/marshallshen/clojure-katas/tree/master/src/clojure_katas">here</a>, which is the place you can put
+your solutions.</p>
 
-<ul>
-<li>Clojure 1.5.1</li>
-<li>Leiningen 2.0.0</li>
-</ul><h1>
-<a name="what" class="anchor" href="#what"><span class="octicon octicon-link"></span></a>What</h1>
-
-<p>Set of small problems from <a href="http://mitpress.mit.edu/sicp/">Structure and Interpretation of Computer Programs</a>
-and <a href="http://projecteuler.net/">Project Euler</a></p>
-
-<h1>
-<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why</h1>
-
-<p>If you're interested in learning Clojure and look for small problems to practice,
-hope this package can be of help!</p>
-
-<h1>
-<a name="how" class="anchor" href="#how"><span class="octicon octicon-link"></span></a>How</h1>
-
-<p>You can use this package to:</p>
-
-<ul>
-<li>Solve existing problems</li>
-<li>Create new problems</li>
-</ul><h2>
-<a name="solve-existing-problems" class="anchor" href="#solve-existing-problems"><span class="octicon octicon-link"></span></a>Solve existing problems</h2>
-
-<h3>
-<a name="example-solve-sine-angle" class="anchor" href="#example-solve-sine-angle"><span class="octicon octicon-link"></span></a>Example: Solve sine angle</h3>
-
-<hr><p>Run katas:</p>
+<p>To verify your answer, you can run:</p>
 
 <pre><code>$ lein katas-run
 </code></pre>
 
-<p>When <em>arranged-prob</em> is not implemented under <code>/src/clojure_katas/sine_angle.clj</code>:</p>
+<p>We also implemented solution manual, to run katas with their solutions;</p>
+
+<pre><code>$ lein katas-answers
+</code></pre>
+
+<h2>
+<a id="look-for-contributors" class="anchor" href="#look-for-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Look for contributors</h2>
+
+<p>We want to keep this project ongoing, if you are interested in helping
+out, feel free to:</p>
+
+<ol>
+<li>Open an issue (I will try to be as responsive as possible! :-)).</li>
+<li>Submit a Pull Request (bugfix, or submit a new problem!)</li>
+</ol>
+
+<p>Many thanks to <a href="https://github.com/marshallshen/clojure-katas/graphs/contributors">the contributors</a>, you made this project awesome!</p>
+
+<h3>
+<a id="example-solve-a-kata" class="anchor" href="#example-solve-a-kata" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example: solve a kata</h3>
+
+<hr>
+
+<p>Say <em>arranged-prob</em> is not implemented under <code>/src/clojure_katas/sine_angle.clj</code>:</p>
 
 <pre><code>$ lein katas-run
 Performing task 'run' with profile(s): 'test'
@@ -76,7 +69,7 @@ Current kata to tackle:  clojure-katas.sine-angle/sine
 false
 </code></pre>
 
-<p>After <em>arranged-porb</em> is implemented, it moves to the next problem:</p>
+<p>After <em>arranged-prob</em> is implemented, it moves to the next problem:</p>
 
 <pre><code>Performing task 'run' with profile(s): 'test'
 
@@ -88,78 +81,66 @@ Current kata to tackle:  clojure-katas.arranged-prob/prob
 false
 </code></pre>
 
-<h2>
-<a name="create-new-problems" class="anchor" href="#create-new-problems"><span class="octicon octicon-link"></span></a>Create new problems</h2>
-
 <h3>
-<a name="example-create-arranged-probability-problem" class="anchor" href="#example-create-arranged-probability-problem"><span class="octicon octicon-link"></span></a>Example: create arranged probability problem</h3>
+<a id="example-create-a-new-kata" class="anchor" href="#example-create-a-new-kata" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example: create a new kata</h3>
 
-<hr><p>Create <code>/src-answers/clojure-katas/arranged-prob.clj</code> for solution.</p>
+<hr>
 
-<div class="highlight highlight-clojure"><pre><span class="p">(</span><span class="kd">defn </span><span class="nv">prob</span>
-  <span class="s">"p: total population,</span>
-<span class="s">   m: total number of sub-category,</span>
-<span class="s">   n: number of consecutive draws"</span>
-  <span class="p">[</span><span class="nv">p</span>, <span class="nv">m</span>, <span class="nv">n</span><span class="p">]</span>
-  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">&gt;= </span><span class="mi">0</span> <span class="nv">n</span><span class="p">)</span> <span class="mi">1</span>
-    <span class="p">(</span><span class="nb">* </span><span class="p">(</span><span class="nb">double </span><span class="p">(</span><span class="nb">/ </span><span class="nv">m</span> <span class="nv">p</span><span class="p">))</span> <span class="p">(</span><span class="nf">prob</span> <span class="p">(</span><span class="nb">- </span><span class="nv">p</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nb">- </span><span class="nv">m</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="nb">- </span><span class="nv">n</span> <span class="mi">1</span><span class="p">)))))</span>
-</pre></div>
+<p>Create <code>/src-answers/clojure-katas/arranged_prob.clj</code> for solution.</p>
 
-<p>Create <code>/src/clojure-katas/arranged-prob.clj</code> for problem challenge.
-<strong>When using core/defproblem, documentation of the problem is required.</strong></p>
+<div class="highlight highlight-clojure"><pre>(<span class="pl-k">defn</span> <span class="pl-e">prob</span>
+  <span class="pl-s"><span class="pl-pds">"</span>p: total population,</span>
+<span class="pl-s">   m: total number of sub-category,</span>
+<span class="pl-s">   n: number of consecutive draws<span class="pl-pds">"</span></span>
+  [p, m, n]
+  (<span class="pl-k">if</span> (<span class="pl-en">&gt;=</span> <span class="pl-c1">0</span> n) <span class="pl-c1">1</span>
+    (<span class="pl-en">*</span> (<span class="pl-en">double</span> (<span class="pl-en">/</span> m p)) (<span class="pl-en">prob</span> (<span class="pl-en">-</span> p <span class="pl-c1">1</span>) (<span class="pl-en">-</span> m <span class="pl-c1">1</span>) (<span class="pl-en">-</span> n <span class="pl-c1">1</span>)))))</pre></div>
 
-<div class="highlight highlight-clojure"><pre><span class="p">(</span><span class="kd">ns </span><span class="nv">clojure-katas.arranged-prob</span>
-  <span class="p">(</span><span class="ss">:require</span> <span class="p">[</span><span class="nv">clojure-katas.core</span> <span class="ss">:as</span> <span class="nv">core</span><span class="p">]))</span>
+<p>Create <code>/src/clojure-katas/arranged_prob.clj</code> for problem challenge.</p>
 
-<span class="p">(</span><span class="nf">core/defproblem</span> <span class="nv">prob</span>
- <span class="s">"required documentation goes here"</span>
-  <span class="p">[</span><span class="nv">p</span>, <span class="nv">m</span>, <span class="nv">n</span><span class="p">])</span>
-</pre></div>
+<p>** When using core/defproblem, doc is required. **</p>
 
-<p>Creates test under <code>/test/clojure-katas/arranged-prob-test</code></p>
+<div class="highlight highlight-clojure"><pre>(<span class="pl-k">ns</span> <span class="pl-e">clojure-katas.arranged-prob</span>
+  (<span class="pl-c1">:require</span> [clojure-katas.core <span class="pl-c1">:as</span> core]))
 
-<div class="highlight highlight-clojure"><pre><span class="p">(</span><span class="nf">deftest</span> <span class="nv">arranged-prob-test</span>
-  <span class="p">(</span><span class="nf">testing</span> <span class="s">"conditional probability"</span>
-    <span class="p">(</span><span class="nf">is</span> <span class="p">(</span><span class="nb">= </span><span class="p">(</span><span class="nb">float </span><span class="mf">0.12311558</span><span class="p">)</span> <span class="p">(</span><span class="nb">float </span><span class="p">(</span><span class="nf">prob</span> <span class="mi">200</span> <span class="mi">100</span> <span class="mi">3</span><span class="p">))))))</span>
-</pre></div>
+(<span class="pl-en">core/defproblem</span> prob
+ <span class="pl-s"><span class="pl-pds">"</span>required documentation goes here<span class="pl-pds">"</span></span>
+  [p, m, n])</pre></div>
 
-<p>Add <code>clojure-katas.arranged-prob-test</code> inside the problemsets defined in <a href="https://github.com/marshallshen/clojure-katas/blob/master/test/clojure_katas/test_runner.clj">test_runner</a></p>
+<p>Creates test under <code>/test/clojure-katas/arranged_prob_test.clj</code></p>
 
-<div class="highlight highlight-clojure"><pre><span class="p">(</span><span class="k">def </span><span class="nv">problems</span>
-  <span class="o">'</span><span class="p">[</span><span class="nv">clojure-katas.sine-angle-test</span>
-    <span class="nv">clojure-katas.arranged-prob-test</span><span class="p">))</span>
-</pre></div>
+<div class="highlight highlight-clojure"><pre>(<span class="pl-k">deftest</span> <span class="pl-e">arranged-prob-test</span>
+  (<span class="pl-en">testing</span> <span class="pl-s"><span class="pl-pds">"</span>conditional probability<span class="pl-pds">"</span></span>
+    (<span class="pl-en">is</span> (<span class="pl-en">=</span> (<span class="pl-en">float</span> <span class="pl-c1">0</span>.12311558) (<span class="pl-en">float</span> (<span class="pl-en">prob</span> <span class="pl-c1">200</span> <span class="pl-c1">100</span> <span class="pl-c1">3</span>))))))</pre></div>
+
+<p>Add <em>clojure-katas.arranged-prob-test</em> inside the problemsets defined in <a href="https://github.com/marshallshen/clojure-katas/blob/master/test/clojure_katas/test_runner.clj">test_runner</a></p>
+
+<div class="highlight highlight-clojure"><pre>(<span class="pl-k">def</span> <span class="pl-e">problems</span>
+  '[clojure-katas.sine-angle-test
+    clojure-katas.arranged-prob-test))</pre></div>
 
 <p>Run through solution to make sure it works:</p>
 
 <pre><code>$ lein katas-answers
 </code></pre>
 
-<h1>
-<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h1>
-
-<p>Many thanks to <a href="https://github.com/fredericksgary">Gary Federicks</a> and <a href="https://github.com/rboyd">Robert Boyd</a> for helping out on the prooject!</p>
-
 <h2>
-<a name="another-great-resources" class="anchor" href="#another-great-resources"><span class="octicon octicon-link"></span></a>Another great resources</h2>
+<a id="current-dependency" class="anchor" href="#current-dependency" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Dependency</h2>
 
 <ul>
-<li><a href="http://clojurekoans.com/">Clojure Koans</a></li>
-<li><a href="http://projecteuler.net/problems">Project Euler</a></li>
-<li><a href="http://www.4clojure.com/">4Clojure</a></li>
+<li>Clojure 1.5.1</li>
+<li>Leiningen 2.4.1</li>
 </ul>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Clojure Katas maintained by <a href="https://github.com/marshallshen">marshallshen</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/marshallshen/clojure-katas">Clojure Katas</a> is maintained by <a href="https://github.com/marshallshen">marshallshen</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
+    </section>
 
-
+  
   </body>
 </html>
+
