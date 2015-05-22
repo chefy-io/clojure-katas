@@ -1,32 +1,36 @@
 # Clojure Katas
-## Current Dependency
-- Clojure 1.5.1
-- Leiningen 2.4.1
 
-# What
-Set of small problems from [Structure and Interpretation of Computer Program](http://mitpress.mit.edu/sicp/)
-and [Project Euler](http://projecteuler.net/)
+This project contains a set of problems to help you get your hands dirty
+with Clojure. I hope we can add more problems and treat this as a
+**living-and-breathing** project.
 
-# Why
-If you're interested in learning Clojure and looking for small problems to practice,
-hopefully this package can be of help!
+## Get started
+The project is set up so that you can solve problems one by one. All the
+problem skeletons are set up [here](https://github.com/marshallshen/clojure-katas/tree/master/src/clojure_katas), which is the place you can put
+your solutions.
 
-# How
-You can use this package to:
-- Solve existing problems
-- Create new problems
+To verify your answer, you can run:
 
-## Run katas:
 
     $ lein katas-run
-## Run katas with implemented answers:
+
+We also implemented solution manual, to run katas with their solutions;
+
 
     $ lein katas-answers
 
-## Solve existing problems
-### Example: Solve sine angle
+## Look for contributors
+We want to keep this project ongoing, if you are interested in helping
+out, feel free to:
+
+  1. Open an issue (I will try to be as responsive as possible! :-)).
+  2. Submit a Pull Request (bugfix, or submit a new problem!)
+
+Many thanks to [the contributors](https://github.com/marshallshen/clojure-katas/graphs/contributors), you made this project awesome!
+
+### Example: solve a kata
 -----------------------------
-When *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
+Say *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
 
     $ lein katas-run
     Performing task 'run' with profile(s): 'test'
@@ -44,8 +48,7 @@ After *arranged-prob* is implemented, it moves to the next problem:
     Current kata to tackle:  clojure-katas.arranged-prob/prob
     false
 
-## Create new problems
-### Example: create arranged probability problem
+### Example: create a new kata
 -------------------------------------------------
 Create `/src-answers/clojure-katas/arranged_prob.clj` for solution.
 
@@ -91,10 +94,8 @@ Run through solution to make sure it works:
 
     $ lein katas-answers
 
-# Contributors
-Many thanks to [Gary Federicks](https://github.com/fredericksgary) and [Robert Boyd](https://github.com/rboyd) for helping out on the project!
 
-## Another great resources
-* [Clojure Koans](http://clojurekoans.com/)
-* [Project Euler](http://projecteuler.net/problems)
-* [4Clojure](http://www.4clojure.com/)
+## Current Dependency
+- Clojure 1.5.1
+- Leiningen 2.4.1
+
