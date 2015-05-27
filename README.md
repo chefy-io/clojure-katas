@@ -9,6 +9,18 @@ The project is set up so that you can solve problems one by one. All the
 problem skeletons are set up [here](https://github.com/marshallshen/clojure-katas/tree/master/src/clojure_katas), which is the place you can put
 your solutions.
 
+### Set up your environment
+We need Java and Clojure to be configured on your machine. If you are a
+Windows user, please visit [this page](http://www.java.com/en/download/help/windows_manual_download.xml)
+on how to install Java. If you are a Mac OS user, please make sure that
+your XCode is updated to include updated Java.
+
+Java version needs to be 1.5 or up; Clojure version needs to be 1.5 or up.
+
+Clojure Katas also relies on [Leiningen](http://leiningen.org/), a Clojure dependency management tool. After you installed Java and Clojure, you can follow [their install instruction](http://leiningen.org/#install) to install Leiningen.
+
+### Run Clojure Katas
+
 To verify your answer, you can run:
 
 
