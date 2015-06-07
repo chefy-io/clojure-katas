@@ -14,5 +14,5 @@
    y: end integer
    output: return sum of the cube of each integer from x to y
 
-   example: (sum-cubes 1, 4) > 1 + 2 + 3 + 4 = 10"
+   example: (sum-cubes 1, 4) > 1 + 8 + 27 + 64 = 100"
   [x y])
