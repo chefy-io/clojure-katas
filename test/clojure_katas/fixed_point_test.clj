@@ -1,7 +1,7 @@
 (ns clojure-katas.fixed-point-test
   (:use clojure.test
         clojure-katas.fixed-point)
-  (:require [clojure.contrib.math :as math]))
+  (:require [clojure.math.numeric-tower :as math]))
 
 (deftest fixed-point-test
   (testing "approximate val using fixed-point"
