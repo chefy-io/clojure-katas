@@ -24,18 +24,8 @@ We also implemented solution manual, to run katas with their solutions;
 
     $ docker-compose up answer
 
-## Look for contributors
-We want to keep this project ongoing, if you are interested in helping
-out, feel free to:
 
-  1. Open an issue (I will try to be as responsive as possible! :-)).
-  2. Submit a Pull Request (bugfix, or submit a new problem!)
-
-If you have any questions, feel free to messaage me on Github or Twitter: @marshallshen
-
-Many thanks to [the contributors](https://github.com/marshallshen/clojure-katas/graphs/contributors), you made this project awesome!
-
-### Example: solve a kata
+## How to practice
 -----------------------------
 Say *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
 
@@ -102,8 +92,14 @@ Run through solution to make sure it works:
 
     $ docker-compose up answer
 
+## Look for contributors
+We want to keep this project ongoing, if you are interested in helping
+out, feel free to:
 
-## Current Dependency
-- Clojure 1.5.1
-- Leiningen 2.4.1
+  1. Open an issue (I will try to be as responsive as possible! :-)).
+  2. Submit a Pull Request (bugfix, or submit a new problem!)
+
+If you have any questions, feel free to messaage me on Github or Twitter: @marshallshen
+
+Many thanks to [the contributors](https://github.com/marshallshen/clojure-katas/graphs/contributors), you made this project awesome!
 
