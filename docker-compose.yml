@@ -1,0 +1,14 @@
+version: '3'
+services:
+  test:
+    image: clojure:latest
+    volumes:
+      - .:/usr/src/clojure-katas
+    working_dir: /usr/src/clojure-katas
+    command: bash -c "lein katas-run"
+  answer:
+    image: clojure
+    volumes:
+      - .:/usr/src/clojure-katas
+    working_dir: /usr/src/clojure-katas
+    command: bash -c "lein katas-answers"

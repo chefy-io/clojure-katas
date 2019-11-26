@@ -10,26 +10,19 @@ problem skeletons are set up [here](https://github.com/marshallshen/clojure-kata
 your solutions.
 
 ### Set up your environment
-We need Java and Clojure to be configured on your machine. If you are a
-Windows user, please visit [this page](http://www.java.com/en/download/help/windows_manual_download.xml)
-on how to install Java. If you are a Mac OS user, please make sure that
-your XCode is updated to include updated Java.
-
-Java version needs to be 1.5 or up; Clojure version needs to be 1.5 or up.
-
-Clojure Katas also relies on [Leiningen](http://leiningen.org/), a Clojure dependency management tool. After you installed Java and Clojure, you can follow [their install instruction](http://leiningen.org/#install) to install Leiningen.
+This project runs within [Docker Compose](https://docs.docker.com/compose/), no need to set up additional dependencies!
 
 ### Run Clojure Katas
 
 To verify your answer, you can run:
 
 
-    $ lein katas-run
+    $ docker-compose up test
 
 We also implemented solution manual, to run katas with their solutions;
 
 
-    $ lein katas-answers
+    $ docker-compose up answer
 
 ## Look for contributors
 We want to keep this project ongoing, if you are interested in helping
