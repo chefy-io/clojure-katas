@@ -100,7 +100,7 @@ Add *clojure-katas.arranged-prob-test* inside the problemsets defined in [test_r
 
 Run through solution to make sure it works:
 
-    $ lein katas-answers
+    $ docker-compose up answer
 
 
 ## Current Dependency
