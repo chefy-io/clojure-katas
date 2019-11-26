@@ -1,6 +1,6 @@
 (ns clojure-katas.fixed-point
   (:require [clojure-katas.core :as core]
-            [clojure.contrib.math :as math]))
+    [clojure.math.numeric-tower :as math]))
 
 (core/defproblem fixed-point
     "A number x is called a fixed point of a function f
