@@ -10,39 +10,22 @@ problem skeletons are set up [here](https://github.com/marshallshen/clojure-kata
 your solutions.
 
 ### Set up your environment
-We need Java and Clojure to be configured on your machine. If you are a
-Windows user, please visit [this page](http://www.java.com/en/download/help/windows_manual_download.xml)
-on how to install Java. If you are a Mac OS user, please make sure that
-your XCode is updated to include updated Java.
-
-Java version needs to be 1.5 or up; Clojure version needs to be 1.5 or up.
-
-Clojure Katas also relies on [Leiningen](http://leiningen.org/), a Clojure dependency management tool. After you installed Java and Clojure, you can follow [their install instruction](http://leiningen.org/#install) to install Leiningen.
+This project runs within [Docker Compose](https://docs.docker.com/compose/), no need to set up additional dependencies!
 
 ### Run Clojure Katas
 
 To verify your answer, you can run:
 
 
-    $ lein katas-run
+    $ docker-compose up test
 
 We also implemented solution manual, to run katas with their solutions;
 
 
-    $ lein katas-answers
+    $ docker-compose up answer
 
-## Look for contributors
-We want to keep this project ongoing, if you are interested in helping
-out, feel free to:
 
-  1. Open an issue (I will try to be as responsive as possible! :-)).
-  2. Submit a Pull Request (bugfix, or submit a new problem!)
-
-If you have any questions, feel free to messaage me on Github or Twitter: @marshallshen
-
-Many thanks to [the contributors](https://github.com/marshallshen/clojure-katas/graphs/contributors), you made this project awesome!
-
-### Example: solve a kata
+## How to practice
 -----------------------------
 Say *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
 
@@ -107,10 +90,15 @@ Add *clojure-katas.arranged-prob-test* inside the problemsets defined in [test_r
 
 Run through solution to make sure it works:
 
-    $ lein katas-answers
+    $ docker-compose up answer
 
+## Look for contributors
+We want to keep this project ongoing, if you are interested in helping
+out, feel free to:
 
-## Current Dependency
-- Clojure 1.5.1
-- Leiningen 2.4.1
+  1. Open an issue (I will try to be as responsive as possible! :-)).
+  2. Submit a Pull Request (bugfix, or submit a new problem!)
 
+If you have any questions, feel free to messaage me on Github or Twitter: @marshallshen
+
+Many thanks to [the contributors](https://github.com/marshallshen/clojure-katas/graphs/contributors), you made this project awesome!
