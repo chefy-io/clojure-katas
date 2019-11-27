@@ -29,7 +29,7 @@ We also implemented solution manual, to run katas with their solutions;
 -----------------------------
 Say *arranged-prob* is not implemented under `/src/clojure_katas/sine_angle.clj`:
 
-    $ lein katas-run
+    $ docker-compose up test
     Performing task 'run' with profile(s): 'test'
     Current kata to tackle:  clojure-katas.sine-angle/sine
     false
