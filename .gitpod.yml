@@ -1,14 +1,5 @@
-{ image: { file: .gitpod.Dockerfile } }
-
+image: 
+  file: .gitpod.Dockerfile
 vscode:
   extensions:
     - betterthantomorrow.calva@2.0.74:TYpO7X5kLGuS+oRT/K4lIw==
-vscode:
-  extensions:
-    - betterthantomorrow.calva@2.0.74:TYpO7X5kLGuS+oRT/K4lIw==
-vscode:
-  extensions:
-    - shaunlebron.vscode-parinfer@0.6.2:3arqj5K1z3zciicWlIjaeg==
-vscode:
-  extensions:
-    - clptn.code-paredit@0.1.1:wf7+jbinQ9R0QR8a6zIxhA==
