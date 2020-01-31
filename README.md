@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/chefy-io/clojure-katas) 
+
 # Clojure Katas
 
 This project contains a set of problems to help you get your hands dirty
